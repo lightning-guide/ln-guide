@@ -1,0 +1,44 @@
+{
+  "networkDemo": {
+    "header": "Network Structure",
+    "restartButton": "Restart animation"
+  },
+  "channelDemo": {
+    "header": "Payment channel example",
+    "restartButton": "Restart animation",
+    "step1": "Channel opening between Alice and Bob (1,000,000 sats)",
+    "step2": "Alice sends sats to Bob",
+    "step3": "Bob sends sats to Alice"
+  },
+  "channelOpeningDemo": {
+    "header": "Alice and Bob decide to open a channel",
+    "restartButton": "Restart animation",
+    "step1": "A 2-of-2 multisig is generated",
+    "step2": "They deposit their funds",
+    "step3": "Channel established",
+    "step4": "Now they can transfer",
+    "multisigTitle": "2-of-2 Multisig",
+    "depositText": "Deposits {{amount}} sats"
+  },
+  "routingDemo": {
+    "header": "Payment routing example",
+    "restartButton": "Restart animation",
+    "step1": "Alice has a channel with Bob",
+    "step2": "Bob has a channel with Carol",
+    "step3": "Alice sends 50,000 sats to Carol through Bob"
+  },
+  "channelUpdateDemo": {
+    "header": "Current channel distribution",
+    "restartButton": "Restart animation",
+    "step1": "Alice wants to send 100,000 sats to Bob",
+    "step2": "New distribution is proposed",
+    "step3": "Alice signs the new distribution",
+    "step4": "Bob signs the new distribution",
+    "step5": "New fund distribution signed",
+    "multisigTitle": "2-of-2 Multisig",
+    "signatureTitle": "New distribution to sign",
+    "signatureSub": "Alice sends {{amount}} sats to Bob",
+    "aliceSignature": "Alice's signature",
+    "bobSignature": "Bob's signature"
+  }
+}

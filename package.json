@@ -1,0 +1,22 @@
+{
+  "name": "vitepress-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.vue",
+    "lint:fix": "eslint . --ext .ts,.vue --fix"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitepress": "^1.0.0"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "leader-line-new": "^1.1.9"
+  }
+}

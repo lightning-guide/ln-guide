@@ -1,0 +1,399 @@
+:root{
+	/* Demo components: light theme */
+	--demo-bg: #ffffff;
+    /* Header más gris para diferenciarlo del fondo en Light Mode */
+    --demo-header-bg: #e5e7eb;
+	--demo-text: #111827;
+	--demo-muted: #6b7280;
+	--demo-node-bg: #f9fafb;
+	--demo-node-text: #111827;
+	--demo-border: #e5e7eb;
+	--demo-accent: #8b5cf6;
+	--demo-secondary: #f59e0b;
+	--demo-capacity-text: #374151;
+}
+
+.dark{
+	/* Demo components: dark theme */
+	--demo-bg: #171717;
+	--demo-header-bg: #1f2937;
+	--demo-text: #f3f4f6;
+	--demo-muted: #9ca3af;
+	--demo-node-bg: #374151;
+	--demo-node-text: #ffffff;
+	--demo-border: #4b5563;
+	--demo-accent: #a78bfa;
+	--demo-secondary: #f59e0b;
+	--demo-capacity-text: #9ca3af;
+}
+
+.lightning-intro{ display:block }
+
+.intro-card,
+.benefit-card{
+	background: var(--vp-c-bg-soft);
+	border: 1px solid var(--vp-c-border);
+	border-radius: 12px;
+	padding: 20px;
+	color: var(--vp-c-text-1);
+}
+
+.equivalences-grid{
+	background: var(--vp-c-bg-soft);
+	border: 1px solid var(--vp-c-border);
+	border-radius: 10px;
+	padding: 16px;
+}
+
+.intro-card p,
+.benefit-card p{
+	color: var(--vp-c-text-2);
+}
+
+/* Dark mode: elevar contraste del texto al tono principal */
+.dark .intro-card p,
+.dark .benefit-card p,
+.dark .equivalences-grid p{
+	color: var(--vp-c-text-1);
+}
+
+/* Lightning Guide Custom Styles */
+
+/* Logo styling with Zap icon */
+.VPNavBarTitle .title::before {
+  content: "⚡";
+  margin-right: 8px;
+  color: #a78bfa;
+  font-size: 1.2em;
+  animation: lightning-glow 2s ease-in-out infinite alternate;
+}
+
+/* Alternative: Use SVG Zap icon */
+.VPNavBarTitle .title::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23a78bfa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'%3E%3C/polygon%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.VPNavBarTitle .title:hover::before {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+}
+
+@keyframes lightning-glow {
+  0% {
+    filter: drop-shadow(0 0 4px rgba(167, 139, 250, 0.4));
+  }
+  100% {
+    filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.6));
+  }
+}
+
+/* Lightning intro styles */
+.lightning-intro {
+  max-width: none;
+  margin: 0 auto;
+}
+
+.intro-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.equivalences-grid {
+  background: var(--vp-c-bg-soft);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid var(--vp-c-border);
+  border-left: 4px solid var(--vp-c-brand-2);
+}
+
+/* Enhanced Benefits Section */
+.benefits-section {
+  margin: 3rem 0;
+  padding: 2rem 0;
+}
+
+.benefits-section::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a78bfa, transparent);
+  margin-bottom: 2rem;
+}
+
+.benefits-section h3 {
+  color: #a78bfa;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+  letter-spacing: -0.025em;
+}
+
+.benefit-card {
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0 2rem 0;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #a78bfa, #8b5cf6);
+}
+
+.benefit-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--vp-c-brand-2);
+}
+
+.benefit-card p {
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.benefit-card p:last-child {
+  margin-bottom: 0;
+}
+
+.intro-card h3 {
+  color: var(--vp-c-text-1);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-card strong {
+  color: var(--vp-c-text-1);
+}
+
+.equivalences-grid strong {
+  color: var(--vp-c-text-1);
+}
+
+/* En dark mode, asegurar que todos los encabezados y enlaces en tarjetas sean blancos/alto contraste */
+.dark .intro-card h3,
+.dark .benefit-card h3,
+.dark .equivalences-grid strong,
+.dark .benefit-card p strong,
+.dark .intro-card a,
+.dark .benefit-card a{
+  color: var(--vp-c-text-1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .benefit-card {
+    padding: 1.5rem;
+  }
+  
+  .benefits-section h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Brand color for bold text across docs (match sidebar/navbar selection tone) */
+.vp-doc strong,
+.intro-card strong,
+.benefit-card strong,
+.equivalences-grid strong {
+  color: #b49bff; /* lighter violet with a touch more saturation */
+}
+
+.dark .vp-doc strong,
+.dark .intro-card strong,
+.dark .benefit-card strong,
+.dark .equivalences-grid strong {
+  color: #c8bbff;
+}
+
+/* Elevación y borde para contenedores de demos en Light Mode */
+.network-demo-container,
+.channel-demo-container{
+	border: 1px solid var(--demo-border);
+	box-shadow: 0 1px 2px rgba(17,24,39,0.05), 0 8px 24px rgba(17,24,39,0.06);
+}
+
+/* En dark reducimos la sombra para evitar halos claros */
+.dark .network-demo-container,
+.dark .channel-demo-container{
+	box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* Estilos para las cajas de especificaciones BOLT */
+.lightning-intro {
+  counter-reset: bolt-counter 0;
+}
+
+/* Estilos específicos para BOLT specs usando intro-card como base */
+.intro-card.bolt-spec {
+  background: var(--vp-c-bg-elv);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  counter-increment: bolt-counter;
+}
+
+.intro-card.bolt-spec:nth-of-type(7) {
+  counter-increment: bolt-counter 2; 
+}
+
+.intro-card.bolt-spec:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: var(--vp-c-brand-1);
+}
+
+.intro-card.bolt-spec::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+}
+
+/* Estilos para títulos h3 dentro de .bolt-spec */
+.intro-card.bolt-spec h3 {
+  margin-top: 0 !important;
+  margin-bottom: 1rem !important;
+  color: var(--vp-c-text-1) !important;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  line-height: 1.3;
+}
+
+/* Numeración para h3 dentro de .bolt-spec */
+.intro-card.bolt-spec h3::before {
+  content: counter(bolt-counter, decimal-leading-zero) !important;
+  background: var(--vp-c-brand-1);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  min-width: 2rem;
+  text-align: center;
+  display: inline-block !important;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.intro-card.bolt-spec p {
+  margin: 0.75rem 0;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+}
+
+.intro-card.bolt-spec strong {
+  color: var(--vp-c-text-1);
+}
+
+/* Estilo de botón para enlaces */
+.intro-card.bolt-spec a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background: var(--vp-c-brand-soft);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.intro-card.bolt-spec a:hover {
+  background: var(--vp-c-brand-1);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Estilo especial para BOLT 11 */
+.intro-card.bolt-spec.bolt-special {
+  border: 2px solid var(--vp-c-brand-1);
+  background: linear-gradient(135deg, var(--vp-c-brand-soft), var(--vp-c-bg-elv));
+}
+
+.intro-card.bolt-spec.bolt-special::before {
+  background: linear-gradient(90deg, var(--vp-c-brand-1), #7c3aed);
+}
+
+/* Nota importante dentro de BOLT 11 */
+.intro-card.bolt-spec .bolt-note {
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+}
+
+/* Responsive para las cajas BOLT */
+@media (max-width: 768px) {
+  .intro-card.bolt-spec {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .intro-card.bolt-spec h3 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 1.2rem !important;
+  }
+  
+  .intro-card.bolt-spec h3::before {
+    align-self: flex-start;
+    margin-right: 0;
+  }
+}
+
+.intro-card.bolt-spec h3 .header-anchor {
+  display: none !important;
+}
+
+.intro-card.bolt-spec h3::after {
+  display: none !important;
+}
+
+.aside-curtain {
+  display: none !important;
+}

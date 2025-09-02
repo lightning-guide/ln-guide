@@ -1,0 +1,44 @@
+{
+  "networkDemo": {
+    "header": "Estructura de la red",
+    "restartButton": "Reiniciar animación"
+  },
+  "channelDemo": {
+    "header": "Ejemplo de canal de pago",
+    "restartButton": "Reiniciar animación",
+    "step1": "Apertura de canal entre Alice y Bob (1,000,000 sats)",
+    "step2": "Alice envía sats a Bob",
+    "step3": "Bob envía sats a Alice"
+  },
+  "channelOpeningDemo": {
+    "header": "Alice y Bob deciden abrir un canal",
+    "restartButton": "Reiniciar animación",
+    "step1": "Se genera una multifirma 2-de-2",
+    "step2": "Depositan sus fondos",
+    "step3": "Canal establecido",
+    "step4": "Ahora pueden transferirse",
+    "multisigTitle": "Multifirma 2-de-2",
+    "depositText": "Deposita {{amount}} sats"
+  },
+  "routingDemo": {
+    "header": "Ejemplo de enrutamiento de pagos",
+    "restartButton": "Reiniciar animación",
+    "step1": "Alice tiene un canal con Bob",
+    "step2": "Bob tiene un canal con Carol",
+    "step3": "Alice envía 50.000 sats a Carol a través de Bob"
+  },
+  "channelUpdateDemo": {
+    "header": "Distribución actual del canal",
+    "restartButton": "Reiniciar animación",
+    "step1": "Alice quiere enviar 100,000 sats a Bob",
+    "step2": "Se propone la nueva distribución",
+    "step3": "Alice firma la nueva distribución",
+    "step4": "Bob firma la nueva distribución",
+    "step5": "Nueva distribución de fondos firmada",
+    "multisigTitle": "Multifirma 2-de-2",
+    "signatureTitle": "Nueva distribución a firmar",
+    "signatureSub": "Alice envía {{amount}} sats a Bob",
+    "aliceSignature": "Firma Alice",
+    "bobSignature": "Firma Bob"
+  }
+}

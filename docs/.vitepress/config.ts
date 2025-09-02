@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Lightning Network Guide',
+  title: 'Lightning Network',
   description: 'Master the Lightning Network with our comprehensive guide. Learn payment channels, BOLT standards, HTLC contracts, and Bitcoin scaling solutions. Fast, secure, and cost-effective micropayments.',
   appearance: true,
 

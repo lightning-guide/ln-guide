@@ -59,7 +59,7 @@
 
 /* Lightning Guide Custom Styles */
 
-/* Logo styling with Zap icon */
+/* Logo styling with Zap icon - Responsive sizing based on sidebar visibility */
 .VPNavBarTitle .title::before {
   content: "⚡";
   margin-right: 8px;
@@ -81,6 +81,80 @@
   background-position: center;
   vertical-align: middle;
   transition: all 0.3s ease;
+}
+
+/* Smooth transitions for logo size changes */
+.VPNavBarTitle .title {
+  transition: font-size 0.3s ease;
+}
+
+.VPNavBarTitle .title::before {
+  transition: all 0.3s ease;
+}
+
+/* Responsive logo sizing - when sidebar is visible */
+@media (min-width: 960px) {
+  .VPNavBarTitle .title::before {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  .VPNavBarTitle .title {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small logo for very wide screens with sidebar */
+@media (min-width: 1280px) {
+  .VPNavBarTitle .title::before {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+  }
+  
+  .VPNavBarTitle .title {
+    font-size: 0.9rem;
+  }
+}
+
+/* Logo sizing for medium screens (tablet landscape) */
+@media (min-width: 768px) and (max-width: 959px) {
+  .VPNavBarTitle .title::before {
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+  }
+  
+  .VPNavBarTitle .title {
+    font-size: 1rem;
+  }
+}
+
+/* Logo sizing for mobile/tablet (sidebar hidden) */
+@media (max-width: 767px) {
+  .VPNavBarTitle .title::before {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+  }
+  
+  .VPNavBarTitle .title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Ensure logo container doesn't overflow */
+.VPNavBarTitle {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.VPNavBarTitle .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .VPNavBarTitle .title:hover::before {

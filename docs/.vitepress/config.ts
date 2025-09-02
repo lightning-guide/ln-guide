@@ -207,7 +207,7 @@ export default defineConfig({
             localStorage.setItem('vp-lang', targetLang)
           }
           
-          // Check if we need to redirect
+          //Check if we need to redirect
            const currentPath = window.location.pathname
            const isOnSpanishPath = currentPath.startsWith('/es/')
            

@@ -95,28 +95,6 @@ The threat of losing all funds by trying to cheat is enough to deter most dishon
 
 </div>
 
-## Times and costs
-
-<div class="intro-card">
-
-### **Cooperative Closure**
-
-*Time:* Immediate once the transaction is confirmed
-
-*Cost:* Single Bitcoin transaction fee
-
-*Security:* Maximum, both participants confirm
-
-### **Unilateral Closure**
-
-*Time:* 2016 blocks (~2 weeks) waiting period
-
-*Cost:* Transaction fee + possible dispute fee
-
-*Security:* High, with anti-fraud mechanisms
-
-</div>
-
 <div class="intro-card">
 
 ### Ready to explore more?

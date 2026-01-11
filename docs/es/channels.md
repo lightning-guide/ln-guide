@@ -1,4 +1,33 @@
-# Cómo funcionan los canales de pago
+---
+title: Canales de Pago Lightning - Cómo Abrir, Actualizar y Gestionar Canales
+description: Aprende cómo funcionan los canales de pago en Lightning Network. Guía paso a paso para abrir canales, actualizar balances, seguridad multifirma y mejores prácticas.
+head:
+  - - meta
+    - name: description
+      content: Aprende cómo funcionan los canales de pago en Lightning Network. Guía paso a paso para abrir canales, actualizar balances, seguridad multifirma y mejores prácticas.
+  - - meta
+    - name: keywords
+      content: canales de pago lightning, abrir canal lightning, actualizar canal, multifirma 2-de-2, seguridad canales lightning, balance canal, canales bitcoin
+  - - meta
+    - property: og:title
+      content: Canales de Pago Lightning - Guía Completa
+  - - meta
+    - property: og:description
+      content: Aprende cómo funcionan los canales de pago en Lightning Network. Guía paso a paso para abrir, actualizar y gestionar canales.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Canales de Pago Lightning - Guía Completa
+  - - meta
+    - name: twitter:description
+      content: Aprende cómo funcionan los canales de pago en Lightning Network. Guía paso a paso para abrir, actualizar y gestionar canales.
+---
+
+# Canales de Pago Lightning
+
+<p class="subtitle">Cómo Funcionan</p>
 
 <div class="lightning-intro">
 

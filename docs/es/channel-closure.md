@@ -1,4 +1,33 @@
-# Cierre de Canales en Lightning Network
+---
+title: Cierre de Canales Lightning - Cooperativo, Unilateral y Forzado
+description: Aprende a cerrar canales en Lightning Network de forma segura. Entiende el cierre cooperativo, unilateral, forzado, períodos de disputa, watchtowers y transacciones de justicia.
+head:
+  - - meta
+    - name: description
+      content: Aprende a cerrar canales en Lightning Network de forma segura. Entiende el cierre cooperativo, unilateral, forzado, períodos de disputa, watchtowers y transacciones de justicia.
+  - - meta
+    - name: keywords
+      content: cierre canal lightning, cerrar canal lightning, cierre cooperativo, cierre unilateral, cierre forzado, watchtowers, transacción justicia, disputa canal
+  - - meta
+    - property: og:title
+      content: Cierre de Canales Lightning - Guía Completa
+  - - meta
+    - property: og:description
+      content: Aprende a cerrar canales en Lightning Network de forma segura. Entiende el cierre cooperativo, unilateral y forzado.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Cierre de Canales Lightning - Guía Completa
+  - - meta
+    - name: twitter:description
+      content: Aprende a cerrar canales en Lightning Network de forma segura. Entiende el cierre cooperativo, unilateral y forzado.
+---
+
+# Cierre de Canales Lightning
+
+<p class="subtitle">Cómo Cerrar Canales de Forma Segura</p>
 
 <div class="lightning-intro">
 

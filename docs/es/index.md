@@ -1,4 +1,33 @@
-# Introducción
+---
+title: Guía Lightning Network - Tutorial Completo Bitcoin Capa 2
+description: Domina Lightning Network con nuestra guía completa para principiantes. Aprende canales de pago, transacciones Bitcoin instantáneas, micropagos y cómo escalar Bitcoin.
+head:
+  - - meta
+    - name: description
+      content: Domina Lightning Network con nuestra guía completa para principiantes. Aprende canales de pago, transacciones Bitcoin instantáneas, micropagos y cómo escalar Bitcoin.
+  - - meta
+    - name: keywords
+      content: lightning network, bitcoin capa 2, canales de pago, escalabilidad bitcoin, micropagos, pagos bitcoin instantáneos, guía lightning, tutorial LN
+  - - meta
+    - property: og:title
+      content: Guía Lightning Network - Tutorial Completo Bitcoin Capa 2
+  - - meta
+    - property: og:description
+      content: Domina Lightning Network con nuestra guía completa para principiantes. Aprende canales de pago, transacciones Bitcoin instantáneas y micropagos.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Guía Lightning Network - Tutorial Completo Bitcoin Capa 2
+  - - meta
+    - name: twitter:description
+      content: Domina Lightning Network con nuestra guía completa para principiantes. Aprende canales de pago, transacciones Bitcoin instantáneas y micropagos.
+---
+
+# Lightning Network
+
+<p class="subtitle">Guía Completa para Principiantes</p>
 
 <div class="lightning-intro">
 

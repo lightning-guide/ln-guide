@@ -1,4 +1,33 @@
-# Introduction
+---
+title: Lightning Network Guide - Complete Bitcoin Layer 2 Tutorial
+description: Master the Lightning Network with our comprehensive beginner guide. Learn payment channels, instant Bitcoin transactions, micropayments, and how to scale Bitcoin effectively.
+head:
+  - - meta
+    - name: description
+      content: Master the Lightning Network with our comprehensive beginner guide. Learn payment channels, instant Bitcoin transactions, micropayments, and how to scale Bitcoin effectively.
+  - - meta
+    - name: keywords
+      content: lightning network, bitcoin layer 2, payment channels, bitcoin scaling, micropayments, instant bitcoin payments, lightning guide, LN tutorial
+  - - meta
+    - property: og:title
+      content: Lightning Network Guide - Complete Bitcoin Layer 2 Tutorial
+  - - meta
+    - property: og:description
+      content: Master the Lightning Network with our comprehensive beginner guide. Learn payment channels, instant Bitcoin transactions, and micropayments.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Lightning Network Guide - Complete Bitcoin Layer 2 Tutorial
+  - - meta
+    - name: twitter:description
+      content: Master the Lightning Network with our comprehensive beginner guide. Learn payment channels, instant Bitcoin transactions, and micropayments.
+---
+
+# Lightning Network
+
+<p class="subtitle">The Complete Beginner's Guide</p>
 
 <div class="lightning-intro">
 

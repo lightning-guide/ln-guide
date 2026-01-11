@@ -1,4 +1,33 @@
-# Estándar BOLT
+---
+title: Estándares BOLT - Especificaciones Técnicas de Lightning Network
+description: Guía completa de estándares BOLT (Basis of Lightning Technology). Aprende sobre especificaciones BOLT 1-12 incluyendo mensajería, canales, transacciones, enrutamiento e invoices.
+head:
+  - - meta
+    - name: description
+      content: Guía completa de estándares BOLT (Basis of Lightning Technology). Aprende sobre especificaciones BOLT 1-12 incluyendo mensajería, canales, transacciones, enrutamiento e invoices.
+  - - meta
+    - name: keywords
+      content: estándares BOLT, especificaciones lightning, BOLT 11 invoice, BOLT 12 offers, protocolo lightning, LND, Core Lightning, Eclair, interoperabilidad lightning
+  - - meta
+    - property: og:title
+      content: Estándares BOLT - Especificaciones Lightning Network
+  - - meta
+    - property: og:description
+      content: Guía completa de estándares BOLT. Aprende sobre especificaciones BOLT 1-12 incluyendo mensajería, canales, enrutamiento e invoices.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Estándares BOLT - Especificaciones Lightning Network
+  - - meta
+    - name: twitter:description
+      content: Guía completa de estándares BOLT. Aprende sobre especificaciones BOLT 1-12 incluyendo mensajería, canales, enrutamiento e invoices.
+---
+
+# Estándares BOLT
+
+<p class="subtitle">Especificaciones Técnicas de Lightning Network</p>
 
 <div class="lightning-intro">
 

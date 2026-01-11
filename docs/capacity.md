@@ -1,4 +1,33 @@
-# Channel Capacity in Lightning Network
+---
+title: Lightning Channel Capacity - Inbound, Outbound & Liquidity Management
+description: Understand Lightning Network channel capacity. Learn about inbound and outbound liquidity, sending and receiving capacity, rebalancing strategies, and Multi-Path Payments (MPP).
+head:
+  - - meta
+    - name: description
+      content: Understand Lightning Network channel capacity. Learn about inbound and outbound liquidity, sending and receiving capacity, rebalancing strategies, and Multi-Path Payments (MPP).
+  - - meta
+    - name: keywords
+      content: lightning channel capacity, inbound liquidity, outbound liquidity, lightning rebalancing, MPP multi-path payments, channel balance management, lightning liquidity
+  - - meta
+    - property: og:title
+      content: Lightning Channel Capacity - Liquidity Guide
+  - - meta
+    - property: og:description
+      content: Understand Lightning Network channel capacity. Learn about inbound/outbound liquidity, rebalancing strategies, and Multi-Path Payments.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Lightning Channel Capacity - Liquidity Guide
+  - - meta
+    - name: twitter:description
+      content: Understand Lightning Network channel capacity. Learn about inbound/outbound liquidity, rebalancing strategies, and Multi-Path Payments.
+---
+
+# Lightning Channel Capacity
+
+<p class="subtitle">Understanding Liquidity</p>
 
 <div class="lightning-intro">
 

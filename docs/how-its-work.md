@@ -1,4 +1,33 @@
+---
+title: How Lightning Network Works - Nodes, Channels & Routing Explained
+description: Learn how Lightning Network works technically. Understand Lightning nodes, payment channels, multisig addresses, HTLC contracts, and payment routing in this detailed guide.
+head:
+  - - meta
+    - name: description
+      content: Learn how Lightning Network works technically. Understand Lightning nodes, payment channels, multisig addresses, HTLC contracts, and payment routing in this detailed guide.
+  - - meta
+    - name: keywords
+      content: how lightning network works, lightning nodes, payment channels, multisig bitcoin, HTLC, lightning routing, P2P payments, off-chain transactions
+  - - meta
+    - property: og:title
+      content: How Lightning Network Works - Technical Guide
+  - - meta
+    - property: og:description
+      content: Learn how Lightning Network works technically. Understand nodes, payment channels, multisig addresses, HTLC contracts, and routing.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: How Lightning Network Works - Technical Guide
+  - - meta
+    - name: twitter:description
+      content: Learn how Lightning Network works technically. Understand nodes, payment channels, multisig addresses, HTLC contracts, and routing.
+---
+
 # How Lightning Network Works
+
+<p class="subtitle">Technical Overview</p>
 
 <div class="lightning-intro">
 

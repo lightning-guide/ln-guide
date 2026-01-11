@@ -13,5 +13,317 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/lightning",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/lightning/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/introduction",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/intro",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/basics",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/basic",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/guide",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/start",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/getting-started",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "/how-its-work",
+      "permanent": true
+    },
+    {
+      "source": "/how-lightning-works",
+      "destination": "/how-its-work",
+      "permanent": true
+    },
+    {
+      "source": "/network",
+      "destination": "/how-its-work",
+      "permanent": true
+    },
+    {
+      "source": "/routing",
+      "destination": "/how-its-work",
+      "permanent": true
+    },
+    {
+      "source": "/nodes",
+      "destination": "/how-its-work",
+      "permanent": true
+    },
+    {
+      "source": "/node",
+      "destination": "/how-its-work",
+      "permanent": true
+    },
+    {
+      "source": "/channel",
+      "destination": "/channels",
+      "permanent": true
+    },
+    {
+      "source": "/payment-channels",
+      "destination": "/channels",
+      "permanent": true
+    },
+    {
+      "source": "/payment-channel",
+      "destination": "/channels",
+      "permanent": true
+    },
+    {
+      "source": "/open-channel",
+      "destination": "/channels",
+      "permanent": true
+    },
+    {
+      "source": "/opening-channels",
+      "destination": "/channels",
+      "permanent": true
+    },
+    {
+      "source": "/liquidity",
+      "destination": "/capacity",
+      "permanent": true
+    },
+    {
+      "source": "/channel-capacity",
+      "destination": "/capacity",
+      "permanent": true
+    },
+    {
+      "source": "/inbound",
+      "destination": "/capacity",
+      "permanent": true
+    },
+    {
+      "source": "/outbound",
+      "destination": "/capacity",
+      "permanent": true
+    },
+    {
+      "source": "/close-channel",
+      "destination": "/channel-closure",
+      "permanent": true
+    },
+    {
+      "source": "/closing-channels",
+      "destination": "/channel-closure",
+      "permanent": true
+    },
+    {
+      "source": "/closure",
+      "destination": "/channel-closure",
+      "permanent": true
+    },
+    {
+      "source": "/force-close",
+      "destination": "/channel-closure",
+      "permanent": true
+    },
+    {
+      "source": "/bolt",
+      "destination": "/bolt-standards",
+      "permanent": true
+    },
+    {
+      "source": "/bolts",
+      "destination": "/bolt-standards",
+      "permanent": true
+    },
+    {
+      "source": "/standards",
+      "destination": "/bolt-standards",
+      "permanent": true
+    },
+    {
+      "source": "/specifications",
+      "destination": "/bolt-standards",
+      "permanent": true
+    },
+    {
+      "source": "/invoices",
+      "destination": "/bolt-standards",
+      "permanent": true
+    },
+    {
+      "source": "/invoice",
+      "destination": "/bolt-standards",
+      "permanent": true
+    },
+    {
+      "source": "/bolt11",
+      "destination": "/bolt-standards",
+      "permanent": true
+    },
+    {
+      "source": "/bolt12",
+      "destination": "/bolt-standards",
+      "permanent": true
+    },
+    {
+      "source": "/htlc",
+      "destination": "/htlc-contracts",
+      "permanent": true
+    },
+    {
+      "source": "/htlcs",
+      "destination": "/htlc-contracts",
+      "permanent": true
+    },
+    {
+      "source": "/contracts",
+      "destination": "/htlc-contracts",
+      "permanent": true
+    },
+    {
+      "source": "/hash-time-locked",
+      "destination": "/htlc-contracts",
+      "permanent": true
+    },
+    {
+      "source": "/es/lightning",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/es/introduction",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/es/intro",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/es/introduccion",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/es/basics",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/es/guide",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/es/guia",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/es/how-it-works",
+      "destination": "/es/how-its-work",
+      "permanent": true
+    },
+    {
+      "source": "/es/como-funciona",
+      "destination": "/es/how-its-work",
+      "permanent": true
+    },
+    {
+      "source": "/es/channel",
+      "destination": "/es/channels",
+      "permanent": true
+    },
+    {
+      "source": "/es/canales",
+      "destination": "/es/channels",
+      "permanent": true
+    },
+    {
+      "source": "/es/canal",
+      "destination": "/es/channels",
+      "permanent": true
+    },
+    {
+      "source": "/es/liquidity",
+      "destination": "/es/capacity",
+      "permanent": true
+    },
+    {
+      "source": "/es/liquidez",
+      "destination": "/es/capacity",
+      "permanent": true
+    },
+    {
+      "source": "/es/capacidad",
+      "destination": "/es/capacity",
+      "permanent": true
+    },
+    {
+      "source": "/es/closure",
+      "destination": "/es/channel-closure",
+      "permanent": true
+    },
+    {
+      "source": "/es/cierre",
+      "destination": "/es/channel-closure",
+      "permanent": true
+    },
+    {
+      "source": "/es/bolt",
+      "destination": "/es/bolt-standards",
+      "permanent": true
+    },
+    {
+      "source": "/es/htlc",
+      "destination": "/es/htlc-contracts",
+      "permanent": true
+    },
+    {
+      "source": "/español",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/espanol",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/spanish",
+      "destination": "/es/",
+      "permanent": true
+    }
   ]
 }

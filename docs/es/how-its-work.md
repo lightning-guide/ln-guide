@@ -1,4 +1,33 @@
-# Cómo funciona Lightning Network
+---
+title: Cómo Funciona Lightning Network - Nodos, Canales y Enrutamiento
+description: Aprende cómo funciona Lightning Network técnicamente. Entiende los nodos Lightning, canales de pago, direcciones multifirma, contratos HTLC y enrutamiento de pagos.
+head:
+  - - meta
+    - name: description
+      content: Aprende cómo funciona Lightning Network técnicamente. Entiende los nodos Lightning, canales de pago, direcciones multifirma, contratos HTLC y enrutamiento de pagos.
+  - - meta
+    - name: keywords
+      content: cómo funciona lightning network, nodos lightning, canales de pago, multifirma bitcoin, HTLC, enrutamiento lightning, pagos P2P, transacciones off-chain
+  - - meta
+    - property: og:title
+      content: Cómo Funciona Lightning Network - Guía Técnica
+  - - meta
+    - property: og:description
+      content: Aprende cómo funciona Lightning Network técnicamente. Entiende nodos, canales de pago, direcciones multifirma, HTLC y enrutamiento.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Cómo Funciona Lightning Network - Guía Técnica
+  - - meta
+    - name: twitter:description
+      content: Aprende cómo funciona Lightning Network técnicamente. Entiende nodos, canales de pago, direcciones multifirma, HTLC y enrutamiento.
+---
+
+# Cómo Funciona Lightning Network
+
+<p class="subtitle">Visión Técnica</p>
 
 <div class="lightning-intro">
 

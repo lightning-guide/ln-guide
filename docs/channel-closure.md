@@ -1,4 +1,33 @@
-# Channel Closure in Lightning Network
+---
+title: Lightning Channel Closure - Cooperative, Unilateral & Force Close Guide
+description: Learn how to close Lightning Network channels safely. Understand cooperative closure, unilateral closure, force close, dispute periods, watchtowers, and justice transactions.
+head:
+  - - meta
+    - name: description
+      content: Learn how to close Lightning Network channels safely. Understand cooperative closure, unilateral closure, force close, dispute periods, watchtowers, and justice transactions.
+  - - meta
+    - name: keywords
+      content: lightning channel closure, close lightning channel, cooperative close, unilateral close, force close, watchtowers, justice transaction, channel dispute
+  - - meta
+    - property: og:title
+      content: Lightning Channel Closure - Complete Guide
+  - - meta
+    - property: og:description
+      content: Learn how to close Lightning Network channels safely. Understand cooperative, unilateral, and force close mechanisms.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Lightning Channel Closure - Complete Guide
+  - - meta
+    - name: twitter:description
+      content: Learn how to close Lightning Network channels safely. Understand cooperative, unilateral, and force close mechanisms.
+---
+
+# Lightning Channel Closure
+
+<p class="subtitle">How to Close Channels Safely</p>
 
 <div class="lightning-intro">
 

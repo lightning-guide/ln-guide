@@ -1,4 +1,33 @@
-# Contratos HTLC en Lightning Network
+---
+title: Contratos HTLC - Hash Time-Locked Contracts en Lightning Network
+description: Aprende cómo funcionan los HTLC (Hash Time-Locked Contracts) en Lightning Network. Entiende hashlock, timelock, preimágenes y cómo los HTLC permiten pagos enrutados sin confianza.
+head:
+  - - meta
+    - name: description
+      content: Aprende cómo funcionan los HTLC (Hash Time-Locked Contracts) en Lightning Network. Entiende hashlock, timelock, preimágenes y cómo los HTLC permiten pagos enrutados sin confianza.
+  - - meta
+    - name: keywords
+      content: HTLC, contratos hash time-locked, lightning HTLC, hashlock, timelock, preimagen, seguridad enrutamiento lightning, pagos sin confianza, pagos condicionales
+  - - meta
+    - property: og:title
+      content: Contratos HTLC - Seguridad en Lightning Network
+  - - meta
+    - property: og:description
+      content: Aprende cómo funcionan los HTLC en Lightning Network. Entiende hashlock, timelock y pagos enrutados sin confianza.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Contratos HTLC - Seguridad en Lightning Network
+  - - meta
+    - name: twitter:description
+      content: Aprende cómo funcionan los HTLC en Lightning Network. Entiende hashlock, timelock y pagos enrutados sin confianza.
+---
+
+# Contratos HTLC
+
+<p class="subtitle">Base de Seguridad en Lightning Network</p>
 
 <div class="lightning-intro">
 

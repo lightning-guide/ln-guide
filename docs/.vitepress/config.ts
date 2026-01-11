@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'Lightning Network',
+  title: 'Lightning Network Guide',
+  titleTemplate: ':title | LN Guide',
   description: 'Master the Lightning Network with our comprehensive guide. Learn payment channels, BOLT standards, HTLC contracts, and Bitcoin scaling solutions. Fast, secure, and cost-effective micropayments.',
   appearance: true,
 
@@ -10,7 +11,46 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   sitemap: {
-    hostname: 'https://ln.guide'
+    hostname: 'https://ln.guide',
+    transformItems: (items) => {
+      return items.map(item => ({
+        ...item,
+        changefreq: 'weekly',
+        priority: item.url === '' || item.url === 'es/' ? 1.0 : 0.8
+      }))
+    }
+  },
+
+  // Dynamic canonical and hreflang per page
+  transformPageData(pageData) {
+    const relativePath = pageData.relativePath
+    let urlPath = relativePath.replace(/\.md$/, '').replace(/index$/, '')
+
+    // Remove trailing slash for non-root paths
+    if (urlPath && urlPath.endsWith('/')) {
+      urlPath = urlPath.slice(0, -1)
+    }
+
+    const isSpanish = urlPath.startsWith('es/')
+    const basePath = isSpanish ? urlPath.replace(/^es\/?/, '') : urlPath
+
+    const canonicalUrl = `https://ln.guide/${urlPath}`
+    const enUrl = `https://ln.guide/${basePath}`
+    const esUrl = `https://ln.guide/es/${basePath}`
+
+    pageData.frontmatter.head ??= []
+
+    // Dynamic canonical
+    pageData.frontmatter.head.push(
+      ['link', { rel: 'canonical', href: canonicalUrl }]
+    )
+
+    // Dynamic hreflang
+    pageData.frontmatter.head.push(
+      ['link', { rel: 'alternate', hreflang: 'en', href: enUrl }],
+      ['link', { rel: 'alternate', hreflang: 'es', href: esUrl }],
+      ['link', { rel: 'alternate', hreflang: 'x-default', href: enUrl }]
+    )
   },
 
   // Markdown configuration
@@ -100,9 +140,8 @@ export default defineConfig({
     ['meta', { name: 'format-detection', content: 'telephone=no' }],
     
     // Primary SEO meta tags
+    // Note: title, description, and keywords are now set per-page via frontmatter
     ['meta', { name: 'title', content: 'Lightning Network' }],
-    ['meta', { name: 'description', content: 'Master the Lightning Network with our comprehensive guide. Learn payment channels, BOLT standards, HTLC contracts, and Bitcoin scaling solutions. Fast, secure, and cost-effective micropayments.' }],
-    ['meta', { name: 'keywords', content: 'Lightning Network, Bitcoin, Layer 2, payment channels, micropayments, BOLT standards, HTLC contracts, Bitcoin scaling, cryptocurrency, blockchain, digital payments, instant payments, low fees, Bitcoin Lightning, LN, payment routing, channel capacity, channel closure' }],
     ['meta', { name: 'author', content: 'Lightning Network Guide' }],
     ['meta', { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }],
     
@@ -138,11 +177,10 @@ export default defineConfig({
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'default' }],
     ['meta', { name: 'apple-mobile-web-app-title', content: 'Lightning Network' }],
     
-    // Canonical and alternate languages
-    ['link', { rel: 'canonical', href: 'https://ln.guide' }],
-    ['link', { rel: 'alternate', hreflang: 'en', href: 'https://ln.guide' }],
-    ['link', { rel: 'alternate', hreflang: 'es', href: 'https://ln.guide/es/' }],
-    ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://ln.guide' }],
+    // Note: Canonical and hreflang are now dynamically generated per page via transformPageData
+
+    // Google Search Console verification (replace YOUR_GSC_CODE with actual code)
+    // ['meta', { name: 'google-site-verification', content: 'YOUR_GSC_CODE' }],
     
     // Favicon and app icons
     ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
@@ -176,57 +214,8 @@ export default defineConfig({
       }
     })],
     
-    // Language detection script
-    ['script', {}, `
-      (function() {
-        try {
-          // Get saved language preference
-          const savedLang = localStorage.getItem('vp-lang')
-          
-          // Get browser language
-          const browserLang = navigator.language.split('-')[0]
-          
-          // Determine target language
-          let targetLang = 'en' // default
-          let shouldSave = false
-          
-          if (savedLang) {
-            // User has a saved preference
-            targetLang = savedLang
-          } else {
-            // No saved preference, detect from browser
-            shouldSave = true
-            if (browserLang === 'es') {
-              // Browser prefers Spanish
-              targetLang = 'es'
-            }
-          }
-          
-          // Save the preference if needed
-          if (shouldSave) {
-            localStorage.setItem('vp-lang', targetLang)
-          }
-          
-          //Check if we need to redirect
-           const currentPath = window.location.pathname
-           const isOnSpanishPath = currentPath.startsWith('/es/')
-           
-           if (targetLang === 'es' && !isOnSpanishPath) {
-             // Redirect to Spanish version
-             const spanishPath = currentPath === '/' || currentPath === '/index.html' 
-               ? '/es/' 
-               : '/es' + currentPath
-             window.location.href = spanishPath
-           } else if (targetLang === 'en' && isOnSpanishPath) {
-             // Redirect to English version
-             const englishPath = currentPath.replace('/es/', '/').replace('/es', '/')
-             window.location.href = englishPath
-           }
-        } catch (error) {
-          // Silent fail for production
-        }
-      })()
-    `]
+    // Language detection removed for SEO - users can manually switch languages via nav
+    // Automatic redirects interfere with Googlebot crawling and cause indexation issues
   ],
 
   // CSS variables for theming

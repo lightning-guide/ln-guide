@@ -1,4 +1,33 @@
-# How Payment Channels Work
+---
+title: Lightning Payment Channels - How to Open, Update & Manage Channels
+description: Learn how Lightning Network payment channels work. Step-by-step guide to opening channels, updating balances, multisig security, and channel management best practices.
+head:
+  - - meta
+    - name: description
+      content: Learn how Lightning Network payment channels work. Step-by-step guide to opening channels, updating balances, multisig security, and channel management best practices.
+  - - meta
+    - name: keywords
+      content: lightning payment channels, open lightning channel, channel updates, multisig 2-of-2, lightning channel security, channel balance, bitcoin channels
+  - - meta
+    - property: og:title
+      content: Lightning Payment Channels - Complete Guide
+  - - meta
+    - property: og:description
+      content: Learn how Lightning Network payment channels work. Step-by-step guide to opening, updating, and managing channels securely.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Lightning Payment Channels - Complete Guide
+  - - meta
+    - name: twitter:description
+      content: Learn how Lightning Network payment channels work. Step-by-step guide to opening, updating, and managing channels securely.
+---
+
+# Lightning Payment Channels
+
+<p class="subtitle">How They Work</p>
 
 <div class="lightning-intro">
 

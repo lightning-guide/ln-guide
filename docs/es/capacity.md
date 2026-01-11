@@ -1,4 +1,33 @@
-# Capacidad de los canales en Lightning Network
+---
+title: Capacidad de Canales Lightning - Liquidez Entrante, Saliente y Gestión
+description: Entiende la capacidad de canales en Lightning Network. Aprende sobre liquidez entrante y saliente, estrategias de reequilibrio y Pagos Multi-Ruta (MPP).
+head:
+  - - meta
+    - name: description
+      content: Entiende la capacidad de canales en Lightning Network. Aprende sobre liquidez entrante y saliente, estrategias de reequilibrio y Pagos Multi-Ruta (MPP).
+  - - meta
+    - name: keywords
+      content: capacidad canal lightning, liquidez entrante, liquidez saliente, reequilibrio lightning, MPP pagos multi-ruta, gestión balance canal, liquidez lightning
+  - - meta
+    - property: og:title
+      content: Capacidad de Canales Lightning - Guía de Liquidez
+  - - meta
+    - property: og:description
+      content: Entiende la capacidad de canales en Lightning Network. Aprende sobre liquidez entrante/saliente, estrategias de reequilibrio y MPP.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: Capacidad de Canales Lightning - Guía de Liquidez
+  - - meta
+    - name: twitter:description
+      content: Entiende la capacidad de canales en Lightning Network. Aprende sobre liquidez entrante/saliente, estrategias de reequilibrio y MPP.
+---
+
+# Capacidad de Canales Lightning
+
+<p class="subtitle">Entendiendo la Liquidez</p>
 
 <div class="lightning-intro">
 

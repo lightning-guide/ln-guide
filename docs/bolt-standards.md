@@ -1,4 +1,33 @@
+---
+title: BOLT Standards - Lightning Network Technical Specifications Explained
+description: Complete guide to BOLT standards (Basis of Lightning Technology). Learn about BOLT 1-12 specifications including messaging, channels, transactions, onion routing, and invoices.
+head:
+  - - meta
+    - name: description
+      content: Complete guide to BOLT standards (Basis of Lightning Technology). Learn about BOLT 1-12 specifications including messaging, channels, transactions, onion routing, and invoices.
+  - - meta
+    - name: keywords
+      content: BOLT standards, lightning specifications, BOLT 11 invoice, BOLT 12 offers, lightning protocol, LND, Core Lightning, Eclair, lightning interoperability
+  - - meta
+    - property: og:title
+      content: BOLT Standards - Lightning Network Specifications
+  - - meta
+    - property: og:description
+      content: Complete guide to BOLT standards. Learn about BOLT 1-12 specifications including messaging, channels, routing, and invoices.
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - name: twitter:title
+      content: BOLT Standards - Lightning Network Specifications
+  - - meta
+    - name: twitter:description
+      content: Complete guide to BOLT standards. Learn about BOLT 1-12 specifications including messaging, channels, routing, and invoices.
+---
+
 # BOLT Standards
+
+<p class="subtitle">Lightning Network Technical Specifications</p>
 
 <div class="lightning-intro">
 

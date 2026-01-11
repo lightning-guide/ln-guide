@@ -1,0 +1,53 @@
+# robots.txt for ln.guide
+# Lightning Network Guide - Bitcoin Layer 2 Educational Resource
+
+User-agent: *
+Allow: /
+
+# Block internal search if exists
+Disallow: /search
+Disallow: /*?*
+
+# Sitemap location
+Sitemap: https://ln.guide/sitemap.xml
+
+# Specific crawler rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Allow AI crawlers for indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /

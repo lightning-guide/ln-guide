@@ -192,13 +192,16 @@ export default defineConfig({
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     
-    // Structured data for rich snippets
+    // Structured data for rich snippets - WebSite schema
     ['script', { type: 'application/ld+json' }, JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Lightning Network Guide",
-      "description": "Complete guide to the Lightning Network - Bitcoin's Layer 2 scaling solution",
+      "alternateName": ["LN Guide", "Guía Lightning Network"],
+      "description": "Complete bilingual guide to the Lightning Network - Bitcoin's Layer 2 scaling solution. Available in English and Spanish.",
       "url": "https://ln.guide",
+      "inLanguage": ["en", "es"],
+      "dateModified": "2025-01-11",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://ln.guide/search?q={search_term_string}",
@@ -206,12 +209,104 @@ export default defineConfig({
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Lightning Network Guide",
+        "name": "ln.guide",
+        "url": "https://ln.guide",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ln.guide/logo.png",
+          "width": 512,
+          "height": 512
+        }
+      }
+    })],
+
+    // LearningResource schema for educational content
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LearningResource",
+      "name": "Lightning Network Guide",
+      "description": "Comprehensive bilingual educational guide about Lightning Network, Bitcoin's Layer 2 scaling solution. Learn payment channels, HTLC contracts, BOLT standards, and channel management.",
+      "url": "https://ln.guide",
+      "inLanguage": ["en", "es"],
+      "learningResourceType": "Guide",
+      "educationalLevel": "Beginner to Advanced",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Bitcoin developers, cryptocurrency enthusiasts, fintech professionals"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "ln.guide",
+        "url": "https://ln.guide"
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2025-01-11",
+      "isAccessibleForFree": true,
+      "teaches": [
+        "Lightning Network fundamentals",
+        "Payment channel mechanics",
+        "HTLC contracts",
+        "BOLT protocol standards",
+        "Channel capacity management",
+        "Lightning node operation"
+      ],
+      "assesses": "Understanding of Bitcoin Layer 2 scaling solutions",
+      "competencyRequired": "Basic understanding of Bitcoin",
+      "timeRequired": "PT2H",
+      "interactivityType": "mixed",
+      "image": "https://ln.guide/logo.png"
+    })],
+
+    // TechArticle schema for technical documentation
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Lightning Network Technical Guide",
+      "alternativeHeadline": "Complete Guide to Bitcoin's Layer 2 Scaling Solution",
+      "description": "In-depth technical documentation covering Lightning Network architecture, payment channels, HTLC contracts, and BOLT specifications.",
+      "url": "https://ln.guide",
+      "inLanguage": ["en", "es"],
+      "author": {
+        "@type": "Organization",
+        "name": "ln.guide",
+        "url": "https://ln.guide"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ln.guide",
+        "url": "https://ln.guide",
         "logo": {
           "@type": "ImageObject",
           "url": "https://ln.guide/logo.png"
         }
-      }
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2025-01-11",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ln.guide"
+      },
+      "articleSection": ["Bitcoin", "Lightning Network", "Layer 2", "Cryptocurrency"],
+      "keywords": "lightning network, bitcoin, layer 2, payment channels, htlc, bolt, cryptocurrency, scaling",
+      "proficiencyLevel": "Beginner to Expert",
+      "dependencies": "Basic Bitcoin knowledge",
+      "image": "https://ln.guide/logo.png"
+    })],
+
+    // Organization schema
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ln.guide",
+      "url": "https://ln.guide",
+      "logo": "https://ln.guide/logo.png",
+      "description": "Educational resource for Lightning Network - Bitcoin's Layer 2 scaling solution",
+      "sameAs": [
+        "https://github.com/lightning-guide",
+        "https://twitter.com/lightning_guide"
+      ],
+      "knowsAbout": ["Lightning Network", "Bitcoin", "Payment Channels", "Cryptocurrency"],
+      "areaServed": "Worldwide"
     })],
     
     // Language detection removed for SEO - users can manually switch languages via nav

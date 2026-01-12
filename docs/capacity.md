@@ -131,7 +131,18 @@ This functionality is quickly becoming standard and greatly improves user experi
 
 Learn how payment channels are closed and what happens to funds when this occurs.
 
-[Next: Channel Closure](/channel-closure)
+[**Next: Channel Closure →**](/channel-closure)
+
+</div>
+
+## Related Topics
+
+<div class="intro-card">
+
+- [Payment Channels](/channels) - How to open and manage channels
+- [Channel Closure](/channel-closure) - Closing channels safely
+- [HTLC Contracts](/htlc-contracts) - How routing payments work
+- [BOLT Standards](/bolt-standards) - Protocol specifications
 
 </div>
 

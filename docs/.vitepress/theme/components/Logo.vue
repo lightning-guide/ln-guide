@@ -1,8 +1,8 @@
 <template>
-  <div class="lightning-logo">
-    <svg class="lightning-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path 
-        d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" 
+  <div class="lightning-logo" role="img" aria-label="Lightning Network Guide Logo">
+    <svg class="lightning-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path
+        d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"
         fill="currentColor"
         stroke="currentColor"
         stroke-width="0.5"

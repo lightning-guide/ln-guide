@@ -59,9 +59,9 @@ BOLTs are technical documents that establish the protocols, message formats, and
 
 ### BOLT 2: Peer Protocol for Channel Management
 
-**Description:** Specifies how nodes establish and manage payment channels between peers.
+**Description:** Specifies how nodes establish and manage [payment channels](/channels) between peers.
 
-**Purpose:** Defines the protocol for opening, closing, and maintaining payment channels securely.
+**Purpose:** Defines the protocol for opening, [closing](/channel-closure), and maintaining payment channels securely.
 
 🔗 [View BOLT 2 on GitHub](https://github.com/lightning/bolts/blob/master/02-peer-protocol.md)
 
@@ -191,6 +191,17 @@ BOLT standards are essential for Lightning Network because:
 - **Adoption:** They facilitate adoption by having clear and documented specifications.
 
 Each BOLT is maintained by the Lightning community and can evolve over time to include new features and security improvements.
+
+</div>
+
+## Related Topics
+
+<div class="intro-card">
+
+- [How Lightning Works](/how-its-work) - Technical overview of the network
+- [Payment Channels](/channels) - How channels implement BOLT specs
+- [HTLC Contracts](/htlc-contracts) - Security mechanism for payments
+- [Channel Closure](/channel-closure) - Closing procedures defined in BOLTs
 
 </div>
 

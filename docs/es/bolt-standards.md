@@ -194,4 +194,15 @@ Cada BOLT es mantenido por la comunidad Lightning y puede evolucionar con el tie
 
 </div>
 
+## Temas Relacionados
+
+<div class="intro-card">
+
+- [Cómo Funciona Lightning](/es/how-its-work) - Visión técnica de la red
+- [Canales de Pago](/es/channels) - Cómo los canales implementan las especificaciones BOLT
+- [Contratos HTLC](/es/htlc-contracts) - Mecanismo de seguridad para pagos
+- [Cierre de Canales](/es/channel-closure) - Procedimientos de cierre definidos en BOLTs
+
+</div>
+
 </div>

@@ -152,7 +152,18 @@ La amenaza de perder todos los fondos por intentar hacer trampa es suficiente pa
 
 Aprende sobre los contratos HTLC y cómo funcionan en Lightning Network.
 
-[Siguiente: Contratos HTLC](/htlc-contracts)
+[**Siguiente: Contratos HTLC →**](/es/htlc-contracts)
+
+</div>
+
+## Temas Relacionados
+
+<div class="intro-card">
+
+- [Canales de Pago](/es/channels) - Apertura y gestión de canales
+- [Capacidad de Canales](/es/capacity) - Gestión de liquidez
+- [Contratos HTLC](/es/htlc-contracts) - Mecanismo de seguridad para pagos
+- [Estándares BOLT](/es/bolt-standards) - Especificaciones del protocolo
 
 </div>
 

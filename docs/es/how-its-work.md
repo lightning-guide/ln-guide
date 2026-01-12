@@ -79,7 +79,7 @@ Una vez que el canal está abierto, los participantes pueden:
 - **Transferir instantáneamente:** Pueden enviar satoshis entre ellos en milisegundos cuantas veces quieran sin necesidad de esperar confirmaciones. Los pagos se procesan localmente entre los dos nodos.
 - **Cerrar el canal:** Cuando las dos partes deciden finalizarlo, publican en la blockchain de Bitcoin el último estado firmado por ambos. La red solo registra una única transacción en la cadena que “liquida” todos los intercambios hechos dentro del canal. Ese estado final determina de forma precisa cuántos satoshis recibe cada participante en su billetera, según las capacidades que tuviera cada lado en el momento del cierre.
 
-_En la próxima sección exploraremos más a fondo los canales de pago y sus características técnicas._
+[**Aprende más: Canales de Pago →**](/es/channels)
 
 </div>
 
@@ -136,9 +136,20 @@ Lightning Network ofrece una forma eficiente y económica de realizar transaccio
 
 ### ¿Listo para profundizar más?
 
-Aprende más sobre los canales de pago en Lightning Network en el siguiente paso.
+Continúa aprendiendo sobre Lightning Network:
 
-[Siguiente: Canales](/channels)
+[**Siguiente: Canales de Pago →**](/es/channels)
+
+</div>
+
+## Temas Relacionados
+
+<div class="intro-card">
+
+- [Canales de Pago](/es/channels) - Abrir, actualizar y cerrar canales
+- [Capacidad de Canales](/es/capacity) - Gestionar liquidez y balance
+- [Contratos HTLC](/es/htlc-contracts) - Mecanismo de seguridad
+- [Estándares BOLT](/es/bolt-standards) - Especificaciones del protocolo
 
 </div>
 

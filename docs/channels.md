@@ -95,8 +95,8 @@ You can see this process in action below:
 The security of funds is guaranteed by several mechanisms:
 
 - The multisig address requires both participants' signatures to move the funds.
-- Each channel update includes penalties if someone tries to cheat by using a previous state.
-- Any participant can close the channel at any time and claim their funds according to the last agreed state.
+- Each channel update includes penalties if someone tries to cheat by using a previous state. These are enforced through [HTLC contracts](/htlc-contracts).
+- Any participant can [close the channel](/channel-closure) at any time and claim their funds according to the last agreed state.
 
 </div>
 
@@ -106,7 +106,18 @@ The security of funds is guaranteed by several mechanisms:
 
 Learn about channel capacity and how this affects transactions on Lightning Network.
 
-[Next: Channel Capacity](/capacity)
+[**Next: Channel Capacity →**](/capacity)
+
+</div>
+
+## Related Topics
+
+<div class="intro-card">
+
+- [How Lightning Works](/how-its-work) - Technical overview of the network
+- [Channel Capacity](/capacity) - Liquidity and balance management
+- [Channel Closure](/channel-closure) - How to close channels safely
+- [HTLC Contracts](/htlc-contracts) - Security mechanism for payments
 
 </div>
 

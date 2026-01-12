@@ -56,7 +56,30 @@ Un Contrato de Bloqueo por Tiempo con Hash (HTLC) es un mecanismo que permite pa
 
 <div class="intro-card">
 
-Los HTLC permiten que los pagos atraviesen múltiples nodos sin confianza directa entre emisor y receptor. Cada salto ve solo el hash y condiciones temporales, manteniendo la seguridad y privacidad.
+Los HTLC permiten que los pagos atraviesen múltiples [canales de pago](/es/channels) sin confianza directa entre emisor y receptor. Cada salto ve solo el hash y condiciones temporales, manteniendo la seguridad y privacidad.
+
+Cuando un pago falla o caduca, los mecanismos de [cierre de canal](/es/channel-closure) aseguran que los fondos regresen de forma segura al emisor.
+
+</div>
+
+<div class="intro-card">
+
+### ¿Listo para explorar más?
+
+Aprende sobre los estándares BOLT y cómo definen las especificaciones del protocolo Lightning Network.
+
+[**Siguiente: Estándares BOLT →**](/es/bolt-standards)
+
+</div>
+
+## Temas Relacionados
+
+<div class="intro-card">
+
+- [Cómo Funciona Lightning](/es/how-its-work) - Visión técnica
+- [Canales de Pago](/es/channels) - Apertura y gestión de canales
+- [Cierre de Canales](/es/channel-closure) - Cierres y disputas
+- [Estándares BOLT](/es/bolt-standards) - Especificaciones del protocolo
 
 </div>
 

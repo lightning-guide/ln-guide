@@ -52,13 +52,13 @@ Lightning Network funciona como una capa paralela a Bitcoin: corre con sus propi
 
 Para operar en Lightning, dos personas crean un contrato entre ellas que actúa como una cuenta bancaria compartida. Ahí registran actualizaciones de saldo que solo conocen los participantes, y que están protegidas por mecanismos criptográficos que impiden que alguno modifique el historial a su favor.
 
-A esa cuenta compartida la llamamos **canal**.
+A esa cuenta compartida la llamamos **[canal](/es/channels)**.
 
-Cuando dos participantes abren un canal, pueden transferirse bitcoin entre sí cuantas veces deseen sin ejecutar transacciones en la cadena principal. Cada envío simplemente actualiza la distribución interna del saldo del canal (el reparto que le corresponde a cada uno) y queda protegido por firmas válidas de ambos.
+Cuando dos participantes [abren un canal](/es/channels), pueden transferirse bitcoin entre sí cuantas veces deseen sin ejecutar transacciones en la cadena principal. Cada envío simplemente actualiza la distribución interna del [saldo del canal](/es/capacity) (el reparto que le corresponde a cada uno) y queda protegido por firmas válidas de ambos.
 
-Cuando cualquiera de los dos desee obtener los fondos que le corresponden nuevamente en la cadena principal, debe cerrar el canal. Esto consiste en publicar en la blockchain el último estado firmado del canal, que liquida los fondos y asigna a cada uno lo que le corresponde. 
+Cuando cualquiera de los dos desee obtener los fondos que le corresponden nuevamente en la cadena principal, debe [cerrar el canal](/es/channel-closure). Esto consiste en publicar en la blockchain el último estado firmado del canal, que liquida los fondos y asigna a cada uno lo que le corresponde. 
 
-_En las próximas secciones exploraremos estos procesos con mayor profundidad._
+[**Siguiente: Cómo Funciona Lightning Network →**](/es/how-its-work)
 
 </div>
 
@@ -124,7 +124,20 @@ Las transacciones de Lightning son rápidas como un relámpago. No hay que esper
 Los pagos se pueden realizar tan rápido como lo permita tu conexión a Internet.
 </div>
 
+</div>
 
-_En la siguiente sección exploraremos el funcionamiento de la red._
+## Explora la Guía
+
+<div class="intro-card">
+
+### Primeros Pasos
+- [Cómo Funciona Lightning Network](/es/how-its-work) - Visión técnica
+- [Canales de Pago](/es/channels) - Abrir y gestionar canales
+- [Capacidad de Canales](/es/capacity) - Liquidez y gestión de balance
+
+### Temas Avanzados
+- [Cierre de Canales](/es/channel-closure) - Cerrar canales de forma segura
+- [Contratos HTLC](/es/htlc-contracts) - Hash Time-Locked Contracts
+- [Estándares BOLT](/es/bolt-standards) - Especificaciones del protocolo
 
 </div>

@@ -106,7 +106,18 @@ La seguridad de los fondos está garantizada por varios mecanismos:
 
 Aprende sobre la capacidad de los canales y cómo esto afecta a las transacciones en Lightning Network.
 
- [Siguiente: Capacidad de Canales](/capacity)
+[**Siguiente: Capacidad de Canales →**](/es/capacity)
+
+</div>
+
+## Temas Relacionados
+
+<div class="intro-card">
+
+- [Cómo Funciona Lightning](/es/how-its-work) - Visión técnica de la red
+- [Capacidad de Canales](/es/capacity) - Liquidez y gestión de balance
+- [Cierre de Canales](/es/channel-closure) - Cómo cerrar canales de forma segura
+- [Contratos HTLC](/es/htlc-contracts) - Mecanismo de seguridad para pagos
 
 </div>
 

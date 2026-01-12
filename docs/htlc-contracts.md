@@ -56,7 +56,30 @@ A Hash Timelock Contract (HTLC) is a mechanism that allows conditional payments 
 
 <div class="intro-card">
 
-HTLCs allow payments to traverse multiple nodes without direct trust between sender and receiver. Each hop only sees the hash and temporal conditions, maintaining security and privacy.
+HTLCs allow payments to traverse multiple [payment channels](/channels) without direct trust between sender and receiver. Each hop only sees the hash and temporal conditions, maintaining security and privacy.
+
+When a payment fails or times out, the [channel closure](/channel-closure) mechanisms ensure funds are returned safely to the sender.
+
+</div>
+
+<div class="intro-card">
+
+### Ready to explore more?
+
+Learn about BOLT standards and how they define Lightning Network protocol specifications.
+
+[**Next: BOLT Standards →**](/bolt-standards)
+
+</div>
+
+## Related Topics
+
+<div class="intro-card">
+
+- [How Lightning Works](/how-its-work) - Technical overview
+- [Payment Channels](/channels) - Opening and managing channels
+- [Channel Closure](/channel-closure) - Closing channels and disputes
+- [BOLT Standards](/bolt-standards) - Protocol specifications
 
 </div>
 

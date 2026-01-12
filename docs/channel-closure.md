@@ -130,7 +130,18 @@ The threat of losing all funds by trying to cheat is enough to deter most dishon
 
 Learn about HTLC contracts and how they work in Lightning Network.
 
-[Next: HTLC Contracts](/htlc-contracts)
+[**Next: HTLC Contracts →**](/htlc-contracts)
+
+</div>
+
+## Related Topics
+
+<div class="intro-card">
+
+- [Payment Channels](/channels) - Opening and managing channels
+- [Channel Capacity](/capacity) - Liquidity management
+- [HTLC Contracts](/htlc-contracts) - Security mechanism for payments
+- [BOLT Standards](/bolt-standards) - Protocol specifications
 
 </div>
 

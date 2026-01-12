@@ -52,13 +52,13 @@ Lightning Network works as a parallel layer to Bitcoin: it runs with its own nod
 
 To operate on Lightning, two people create a contract between them that acts as a shared bank account. There they record balance updates that only the participants know, and which are protected by cryptographic mechanisms that prevent either from modifying the history in their favor.
 
-We call that shared account a **channel**.
+We call that shared account a **[channel](/channels)**.
 
-When two participants open a channel, they can transfer bitcoin to each other as many times as they want without executing transactions on the main chain. Each send simply updates the internal distribution of the channel balance (the share that corresponds to each one) and is protected by valid signatures from both.
+When two participants [open a channel](/channels), they can transfer bitcoin to each other as many times as they want without executing transactions on the main chain. Each send simply updates the internal distribution of the [channel balance](/capacity) (the share that corresponds to each one) and is protected by valid signatures from both.
 
-When either of the two wants to get their corresponding funds back on the main chain, they must close the channel. This consists of publishing the last signed state of the channel on the blockchain, which liquidates the funds and assigns to each what corresponds to them.
+When either of the two wants to get their corresponding funds back on the main chain, they must [close the channel](/channel-closure). This consists of publishing the last signed state of the channel on the blockchain, which liquidates the funds and assigns to each what corresponds to them.
 
-_In the next sections we will explore these processes in greater depth._
+[**Next: How Lightning Network Works →**](/how-its-work)
 
 </div>
 
@@ -124,7 +124,20 @@ Lightning transactions are fast as lightning. There's no need to wait for block 
 Payments can be made as fast as your internet connection allows.
 </div>
 
+</div>
 
-_In the next section we will explore how the network works._
+## Explore the Guide
+
+<div class="intro-card">
+
+### Getting Started
+- [How Lightning Network Works](/how-its-work) - Technical overview
+- [Payment Channels](/channels) - Opening and managing channels
+- [Channel Capacity](/capacity) - Liquidity and balance management
+
+### Advanced Topics
+- [Channel Closure](/channel-closure) - Closing channels safely
+- [HTLC Contracts](/htlc-contracts) - Hash Time-Locked Contracts
+- [BOLT Standards](/bolt-standards) - Protocol specifications
 
 </div>

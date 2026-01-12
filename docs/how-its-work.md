@@ -44,7 +44,7 @@ Each Lightning node has two main functions:
 - **Connect to Bitcoin:** It needs to connect to a Bitcoin node to interact with the blockchain, whether to open channels, close them, or resolve disputes.
 - **Connect to other Lightning nodes:** It communicates with other Lightning nodes through a P2P (peer-to-peer) network to send and receive payments.
 
-Each node in the network has its own Bitcoin wallet with its unique mnemonic phrase (12/24 words). To connect with other nodes, they use **payment channels**, which are shared multisig accounts between two nodes' wallets to exchange satoshis between them.
+Each node in the network has its own Bitcoin wallet with its unique mnemonic phrase (12/24 words). To connect with other nodes, they use **[payment channels](/channels)**, which are shared multisig accounts between two nodes' wallets to exchange satoshis between them.
 
 In essence, Lightning is a network built from bilateral channels: each channel links exactly two participants (two nodes) and defines how much balance can be moved in each direction. From these point-to-point links, a mesh is formed where payments can traverse several hops to their destination. There are no channels between "many" people at once; composition occurs by chaining multiple 2-of-2 channels, which simplifies security and allows capacity and connectivity to emerge from local agreements between peers.
 
@@ -77,9 +77,9 @@ To initiate a Lightning channel, participants lock funds in a **2-of-2** scheme.
 Once the channel is open, participants can:
 
 - **Transfer instantly:** They can send satoshis between them in milliseconds as many times as they want without needing to wait for confirmations. Payments are processed locally between the two nodes.
-- **Close the channel:** When the two parties decide to finalize it, they publish the last state signed by both on the Bitcoin blockchain. The network only records a single transaction on the chain that "liquidates" all exchanges made within the channel. That final state determines precisely how many satoshis each participant receives in their wallet, according to the capacities each side had at the time of closure.
+- **[Close the channel](/channel-closure):** When the two parties decide to finalize it, they publish the last state signed by both on the Bitcoin blockchain. The network only records a single transaction on the chain that "liquidates" all exchanges made within the channel. That final state determines precisely how many satoshis each participant receives in their wallet, according to the [channel capacity](/capacity) each side had at the time of closure.
 
-_In the next section we will explore payment channels and their technical characteristics in more detail._
+[**Learn more: Payment Channels →**](/channels)
 
 </div>
 
@@ -115,7 +115,7 @@ Allows funds to be recovered after a determined time if the other party doesn't 
 >
 > Thanks to HTLCs, Lightning Network can function without trust between parties. Each payment is backed by the security of the Bitcoin blockchain, ensuring that no one can steal funds without cooperation.
 
-_In a later section we will explore in detail how HTLCs work and their practical applications._
+[**Learn more: HTLC Contracts →**](/htlc-contracts)
 
 </div>
 
@@ -136,9 +136,20 @@ Lightning Network offers an efficient and economical way to perform Bitcoin tran
 
 ### Ready to dive deeper?
 
-Learn more about payment channels in Lightning Network in the next step.
+Continue learning about Lightning Network:
 
-[Next: Channels](/channels)
+[**Next: Payment Channels →**](/channels)
+
+</div>
+
+## Related Topics
+
+<div class="intro-card">
+
+- [Payment Channels](/channels) - Open, update, and close channels
+- [Channel Capacity](/capacity) - Manage liquidity and balance
+- [HTLC Contracts](/htlc-contracts) - Security mechanism explained
+- [BOLT Standards](/bolt-standards) - Protocol specifications
 
 </div>
 

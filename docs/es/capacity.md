@@ -131,7 +131,18 @@ Esta funcionalidad se está convirtiendo rápidamente en estándar y mejora enor
 
 Aprende cómo se cierran los canales de pago y qué sucede con los fondos cuando esto ocurre.
 
- [Siguiente: Cierre de Canales](/channel-closure)
+[**Siguiente: Cierre de Canales →**](/es/channel-closure)
+
+</div>
+
+## Temas Relacionados
+
+<div class="intro-card">
+
+- [Canales de Pago](/es/channels) - Cómo abrir y gestionar canales
+- [Cierre de Canales](/es/channel-closure) - Cerrar canales de forma segura
+- [Contratos HTLC](/es/htlc-contracts) - Cómo funcionan los pagos enrutados
+- [Estándares BOLT](/es/bolt-standards) - Especificaciones del protocolo
 
 </div>
 

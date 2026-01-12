@@ -1,42 +1,47 @@
 ---
-title: Guía Lightning Network - Tutorial Completo Bitcoin Capa 2
-description: Domina Lightning Network con nuestra guía completa para principiantes. Aprende canales de pago, transacciones Bitcoin instantáneas, micropagos y cómo escalar Bitcoin.
+title: Guía Lightning Network - LN Guide en Español | Tutorial Bitcoin Capa 2
+description: La guía completa de Lightning Network (LN Guide) en español en ln.guide. Aprende cómo funciona Lightning Network, canales de pago, contratos HTLC y escalabilidad Bitcoin. Tutorial gratuito de principiante a avanzado.
 head:
   - - meta
     - name: description
-      content: Domina Lightning Network con nuestra guía completa para principiantes. Aprende canales de pago, transacciones Bitcoin instantáneas, micropagos y cómo escalar Bitcoin.
+      content: La guía completa de Lightning Network (LN Guide) en español en ln.guide. Aprende cómo funciona Lightning Network, canales de pago, contratos HTLC y escalabilidad Bitcoin. Tutorial gratuito de principiante a avanzado.
   - - meta
     - name: keywords
-      content: lightning network, bitcoin capa 2, canales de pago, escalabilidad bitcoin, micropagos, pagos bitcoin instantáneos, guía lightning, tutorial LN
+      content: guía lightning network, ln guide español, guía lightning, ln.guide, tutorial lightning network, guía bitcoin capa 2, lightning network en español, cómo funciona lightning network, canales de pago guía, tutorial escalabilidad bitcoin, lightning network explicado, lightning network para principiantes
   - - meta
     - property: og:title
-      content: Guía Lightning Network - Tutorial Completo Bitcoin Capa 2
+      content: Guía Lightning Network - LN Guide en Español | Tutorial Bitcoin Capa 2
   - - meta
     - property: og:description
-      content: Domina Lightning Network con nuestra guía completa para principiantes. Aprende canales de pago, transacciones Bitcoin instantáneas y micropagos.
+      content: La guía completa de Lightning Network (LN Guide) en español. Aprende canales de pago, transacciones Bitcoin instantáneas y micropagos en ln.guide.
   - - meta
     - property: og:type
-      content: article
+      content: website
+  - - meta
+    - property: og:site_name
+      content: LN Guide - ln.guide
   - - meta
     - name: twitter:title
-      content: Guía Lightning Network - Tutorial Completo Bitcoin Capa 2
+      content: Guía Lightning Network - LN Guide en Español | Tutorial Bitcoin Capa 2
   - - meta
     - name: twitter:description
-      content: Domina Lightning Network con nuestra guía completa para principiantes. Aprende canales de pago, transacciones Bitcoin instantáneas y micropagos.
+      content: La guía completa de Lightning Network (LN Guide) en español. Aprende canales de pago, transacciones Bitcoin instantáneas y micropagos en ln.guide.
 ---
 
-# Lightning Network
+# Guía Lightning Network
 
-<p class="subtitle">Guía Completa para Principiantes</p>
+<p class="subtitle">LN Guide - Tutorial Completo para Principiantes</p>
 
 <div class="lightning-intro">
+
+Bienvenido a **ln.guide** — tu **Guía Lightning Network** completa en español. Esta **LN Guide** cubre todo desde conceptos básicos hasta detalles técnicos avanzados sobre la solución de escalabilidad Capa 2 de Bitcoin.
 
 ## ¿Qué es Lightning Network?
 
 <div class="intro-card">
-Lightning es un protocolo de “capa 2” para pagos rápidos. Opera fuera de cadena mediante cooperación entre pares y recurre a transacciones on-chain para hacer cumplir el estado si es necesario.
+Lightning es un protocolo de "capa 2" para pagos rápidos. Opera fuera de cadena mediante cooperación entre pares y recurre a transacciones on-chain para hacer cumplir el estado si es necesario.
 
-Aunque Lightning Network puede implementarse sobre distintas blockchains, en esta guía nos enfocaremos exclusivamente en su uso sobre la red de Bitcoin.
+Aunque Lightning Network puede implementarse sobre distintas blockchains, en esta **Guía Lightning** nos enfocaremos exclusivamente en su uso sobre la red de Bitcoin.
 </div>
 
 ## Concepto básico

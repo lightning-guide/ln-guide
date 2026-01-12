@@ -1,42 +1,47 @@
 ---
-title: Lightning Network Guide - Complete Bitcoin Layer 2 Tutorial
-description: Master the Lightning Network with our comprehensive beginner guide. Learn payment channels, instant Bitcoin transactions, micropayments, and how to scale Bitcoin effectively.
+title: Lightning Network Guide - LN Guide | Bitcoin Layer 2 Tutorial
+description: The complete Lightning Network Guide (LN Guide) at ln.guide. Learn how Lightning Network works, payment channels, HTLC contracts, and Bitcoin Layer 2 scaling. Free beginner to advanced tutorial.
 head:
   - - meta
     - name: description
-      content: Master the Lightning Network with our comprehensive beginner guide. Learn payment channels, instant Bitcoin transactions, micropayments, and how to scale Bitcoin effectively.
+      content: The complete Lightning Network Guide (LN Guide) at ln.guide. Learn how Lightning Network works, payment channels, HTLC contracts, and Bitcoin Layer 2 scaling. Free beginner to advanced tutorial.
   - - meta
     - name: keywords
-      content: lightning network, bitcoin layer 2, payment channels, bitcoin scaling, micropayments, instant bitcoin payments, lightning guide, LN tutorial
+      content: lightning network guide, ln guide, lightning guide, ln.guide, lightning network tutorial, bitcoin layer 2 guide, lightning network, how lightning network works, payment channels guide, bitcoin scaling tutorial, LN tutorial, lightning network explained, lightning network for beginners
   - - meta
     - property: og:title
-      content: Lightning Network Guide - Complete Bitcoin Layer 2 Tutorial
+      content: Lightning Network Guide - LN Guide | Complete Bitcoin Layer 2 Tutorial
   - - meta
     - property: og:description
-      content: Master the Lightning Network with our comprehensive beginner guide. Learn payment channels, instant Bitcoin transactions, and micropayments.
+      content: The complete Lightning Network Guide (LN Guide). Learn payment channels, instant Bitcoin transactions, and micropayments at ln.guide.
   - - meta
     - property: og:type
-      content: article
+      content: website
+  - - meta
+    - property: og:site_name
+      content: LN Guide - ln.guide
   - - meta
     - name: twitter:title
-      content: Lightning Network Guide - Complete Bitcoin Layer 2 Tutorial
+      content: Lightning Network Guide - LN Guide | Bitcoin Layer 2 Tutorial
   - - meta
     - name: twitter:description
-      content: Master the Lightning Network with our comprehensive beginner guide. Learn payment channels, instant Bitcoin transactions, and micropayments.
+      content: The complete Lightning Network Guide (LN Guide). Learn payment channels, instant Bitcoin transactions, and micropayments at ln.guide.
 ---
 
-# Lightning Network
+# Lightning Network Guide
 
-<p class="subtitle">The Complete Beginner's Guide</p>
+<p class="subtitle">LN Guide - The Complete Beginner's Tutorial</p>
 
 <div class="lightning-intro">
+
+Welcome to **ln.guide** — your complete **Lightning Network Guide**. This **LN Guide** covers everything from basic concepts to advanced technical details about Bitcoin's Layer 2 scaling solution.
 
 ## What is Lightning Network?
 
 <div class="intro-card">
 Lightning is a "layer 2" protocol for fast payments. It operates off-chain through peer cooperation and resorts to on-chain transactions to enforce state if necessary.
 
-Although Lightning Network can be implemented on different blockchains, in this guide we will focus exclusively on its use on the Bitcoin network.
+Although Lightning Network can be implemented on different blockchains, in this **Lightning Guide** we will focus exclusively on its use on the Bitcoin network.
 </div>
 
 ## Basic concept

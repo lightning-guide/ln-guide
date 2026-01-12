@@ -197,11 +197,20 @@ export default defineConfig({
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "Lightning Network Guide",
-      "alternateName": ["LN Guide", "Guía Lightning Network"],
-      "description": "Complete bilingual guide to the Lightning Network - Bitcoin's Layer 2 scaling solution. Available in English and Spanish.",
+      "alternateName": [
+        "LN Guide",
+        "ln.guide",
+        "Lightning Guide",
+        "Guía Lightning Network",
+        "Guía Lightning",
+        "LN Guide Español",
+        "Lightning Network Tutorial",
+        "Bitcoin Lightning Guide"
+      ],
+      "description": "Complete bilingual guide to the Lightning Network - Bitcoin's Layer 2 scaling solution. The definitive LN Guide available in English and Spanish at ln.guide.",
       "url": "https://ln.guide",
       "inLanguage": ["en", "es"],
-      "dateModified": "2025-01-11",
+      "dateModified": "2025-01-12",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://ln.guide/search?q={search_term_string}",
@@ -217,7 +226,8 @@ export default defineConfig({
           "width": 512,
           "height": 512
         }
-      }
+      },
+      "keywords": "lightning network guide, ln guide, lightning guide, ln.guide, lightning network tutorial, bitcoin layer 2, payment channels, htlc, bolt standards"
     })],
 
     // LearningResource schema for educational content
@@ -225,11 +235,13 @@ export default defineConfig({
       "@context": "https://schema.org",
       "@type": "LearningResource",
       "name": "Lightning Network Guide",
-      "description": "Comprehensive bilingual educational guide about Lightning Network, Bitcoin's Layer 2 scaling solution. Learn payment channels, HTLC contracts, BOLT standards, and channel management.",
+      "alternateName": ["LN Guide", "Lightning Guide", "ln.guide", "Guía Lightning Network"],
+      "description": "Comprehensive bilingual educational guide about Lightning Network, Bitcoin's Layer 2 scaling solution. Learn payment channels, HTLC contracts, BOLT standards, and channel management. The definitive LN Guide at ln.guide.",
       "url": "https://ln.guide",
       "inLanguage": ["en", "es"],
       "learningResourceType": "Guide",
       "educationalLevel": "Beginner to Advanced",
+      "keywords": "lightning network guide, ln guide, lightning guide, bitcoin layer 2, payment channels tutorial, htlc explained, bolt standards",
       "audience": {
         "@type": "Audience",
         "audienceType": "Bitcoin developers, cryptocurrency enthusiasts, fintech professionals"
@@ -261,9 +273,9 @@ export default defineConfig({
     ['script', { type: 'application/ld+json' }, JSON.stringify({
       "@context": "https://schema.org",
       "@type": "TechArticle",
-      "headline": "Lightning Network Technical Guide",
-      "alternativeHeadline": "Complete Guide to Bitcoin's Layer 2 Scaling Solution",
-      "description": "In-depth technical documentation covering Lightning Network architecture, payment channels, HTLC contracts, and BOLT specifications.",
+      "headline": "Lightning Network Guide - Complete LN Guide",
+      "alternativeHeadline": "The Definitive Lightning Guide - Bitcoin Layer 2 Tutorial at ln.guide",
+      "description": "In-depth technical documentation covering Lightning Network architecture, payment channels, HTLC contracts, and BOLT specifications. Your complete Lightning Network Guide at ln.guide.",
       "url": "https://ln.guide",
       "inLanguage": ["en", "es"],
       "author": {
@@ -286,8 +298,8 @@ export default defineConfig({
         "@type": "WebPage",
         "@id": "https://ln.guide"
       },
-      "articleSection": ["Bitcoin", "Lightning Network", "Layer 2", "Cryptocurrency"],
-      "keywords": "lightning network, bitcoin, layer 2, payment channels, htlc, bolt, cryptocurrency, scaling",
+      "articleSection": ["Bitcoin", "Lightning Network", "Layer 2", "Cryptocurrency", "LN Guide"],
+      "keywords": "lightning network guide, ln guide, lightning guide, ln.guide, bitcoin layer 2, payment channels, htlc, bolt, cryptocurrency scaling, lightning network tutorial",
       "proficiencyLevel": "Beginner to Expert",
       "dependencies": "Basic Bitcoin knowledge",
       "image": "https://ln.guide/logo.png"
@@ -298,15 +310,90 @@ export default defineConfig({
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "ln.guide",
+      "alternateName": ["LN Guide", "Lightning Network Guide", "Lightning Guide"],
       "url": "https://ln.guide",
       "logo": "https://ln.guide/logo.png",
-      "description": "Educational resource for Lightning Network - Bitcoin's Layer 2 scaling solution",
+      "description": "Educational resource for Lightning Network - Bitcoin's Layer 2 scaling solution. The definitive Lightning Network Guide.",
       "sameAs": [
         "https://github.com/lightning-guide",
         "https://twitter.com/lightning_guide"
       ],
-      "knowsAbout": ["Lightning Network", "Bitcoin", "Payment Channels", "Cryptocurrency"],
+      "knowsAbout": ["Lightning Network", "Bitcoin", "Payment Channels", "Cryptocurrency", "HTLC", "BOLT Standards"],
       "areaServed": "Worldwide"
+    })],
+
+    // FAQ Schema for common Lightning Network questions
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Lightning Network?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lightning Network is a Layer 2 scaling solution for Bitcoin that enables fast, low-cost payments through payment channels. It operates off-chain and only settles on the Bitcoin blockchain when channels are opened or closed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Lightning Network Guide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Lightning Network Guide (LN Guide) is an educational resource that explains how Lightning Network works, including payment channels, HTLC contracts, BOLT standards, and channel management. ln.guide provides a complete bilingual guide in English and Spanish."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do Lightning payment channels work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lightning payment channels are created when two parties lock Bitcoin in a multisig address on the blockchain. They can then exchange unlimited transactions off-chain by updating the channel balance. When either party wants to close the channel, the final balance is settled on-chain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are HTLC contracts in Lightning Network?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HTLC (Hash Time-Locked Contracts) are smart contracts that enable trustless routing of payments across multiple Lightning channels. They use cryptographic hashes and time locks to ensure payments either complete successfully or are refunded."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are BOLT standards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BOLT (Basis of Lightning Technology) standards are the technical specifications that define how Lightning Network implementations should work. They cover messaging protocols, channel operations, payment routing, and invoice formats."
+          }
+        }
+      ]
+    })],
+
+    // BreadcrumbList schema for navigation
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Lightning Network Guide",
+          "item": "https://ln.guide"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Lightning Works",
+          "item": "https://ln.guide/how-its-work"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Payment Channels",
+          "item": "https://ln.guide/channels"
+        }
+      ]
     })],
     
     // Language detection removed for SEO - users can manually switch languages via nav

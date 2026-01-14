@@ -97,7 +97,6 @@ export default defineConfig({
         ],
         nav: [
           { text: 'Lightning Network', link: '/' },
-          { text: 'Nostr', link: '/nostr' },
         ]
       }
     },
@@ -126,7 +125,6 @@ export default defineConfig({
         ],
         nav: [
           { text: 'Lightning Network', link: '/es' },
-          { text: 'Nostr', link: '/es/nostr' },
         ]
       }
     }
@@ -210,7 +208,7 @@ export default defineConfig({
       "description": "Complete bilingual guide to the Lightning Network - Bitcoin's Layer 2 scaling solution. The definitive LN Guide available in English and Spanish at ln.guide.",
       "url": "https://ln.guide",
       "inLanguage": ["en", "es"],
-      "dateModified": "2025-01-12",
+      "dateModified": "2026-01-14",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://ln.guide/search?q={search_term_string}",
@@ -252,7 +250,7 @@ export default defineConfig({
         "url": "https://ln.guide"
       },
       "datePublished": "2024-01-01",
-      "dateModified": "2025-01-11",
+      "dateModified": "2026-01-14",
       "isAccessibleForFree": true,
       "teaches": [
         "Lightning Network fundamentals",
@@ -293,7 +291,7 @@ export default defineConfig({
         }
       },
       "datePublished": "2024-01-01",
-      "dateModified": "2025-01-11",
+      "dateModified": "2026-01-14",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ln.guide"
@@ -366,6 +364,38 @@ export default defineConfig({
             "@type": "Answer",
             "text": "BOLT (Basis of Lightning Technology) standards are the technical specifications that define how Lightning Network implementations should work. They cover messaging protocols, channel operations, payment routing, and invoice formats."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the fees for Lightning Network?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lightning Network fees are typically less than 1 satoshi per payment for small transactions. Fees are charged by routing nodes and are a tiny fraction of on-chain Bitcoin transaction fees, making micropayments economically viable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Lightning Network safe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Lightning Network uses cryptographic security mechanisms including HTLCs (Hash Time-Locked Contracts) and penalty transactions. Funds are secured by the Bitcoin blockchain, and dishonest behavior can result in losing all channel funds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast are Lightning Network payments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lightning payments are nearly instant, typically completing in under 1 second. Unlike on-chain Bitcoin transactions that require block confirmations, Lightning payments settle immediately once the route is found."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Lightning Network without running a node?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can use Lightning Network through mobile wallets like Phoenix, Breez, or Wallet of Satoshi without running your own node. These wallets handle channel management automatically, making Lightning accessible to everyone."
+          }
         }
       ]
     })],
@@ -395,7 +425,54 @@ export default defineConfig({
         }
       ]
     })],
-    
+
+    // HowTo schema for channel opening tutorial
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Open a Lightning Network Channel",
+      "description": "Step-by-step guide to opening a payment channel on Lightning Network to send and receive instant Bitcoin payments.",
+      "image": "https://ln.guide/logo.png",
+      "totalTime": "PT30M",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "BTC",
+        "value": "0.0001"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Set up a Lightning wallet",
+          "text": "Download and configure a Lightning-compatible wallet such as Phoenix, Breez, or run your own node with software like LND or Core Lightning.",
+          "url": "https://ln.guide/channels"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Fund your wallet with Bitcoin",
+          "text": "Transfer Bitcoin to your Lightning wallet. This Bitcoin will be used to fund your payment channels.",
+          "url": "https://ln.guide/channels"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Choose a peer to connect with",
+          "text": "Select a well-connected node to open a channel with. Good peers have high uptime and multiple connections to the network.",
+          "url": "https://ln.guide/channels"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Open the channel",
+          "text": "Initiate the channel opening by creating a 2-of-2 multisig address and funding it with a Bitcoin transaction. Wait for blockchain confirmation.",
+          "url": "https://ln.guide/channels"
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Start transacting",
+          "text": "Once confirmed, your channel is open and you can send instant Lightning payments within your channel capacity.",
+          "url": "https://ln.guide/capacity"
+        }
+      ]
+    })],
+
     // Language detection removed for SEO - users can manually switch languages via nav
     // Automatic redirects interfere with Googlebot crawling and cause indexation issues
   ],

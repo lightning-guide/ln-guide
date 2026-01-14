@@ -326,6 +326,31 @@
       "source": "/spanish",
       "destination": "/es/",
       "permanent": true
+    },
+    {
+      "source": "/nostr",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/nostr.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/es/nostr",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/es/nostr.html",
+      "destination": "/es/",
+      "permanent": true
+    },
+    {
+      "source": "/es.html",
+      "destination": "/es/",
+      "permanent": true
     }
   ]
 }
